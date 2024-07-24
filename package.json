@@ -1,5 +1,5 @@
 {
-  "name": "K95-monorepo-starter",
+  "name": "k95-monorepo-starter",
   "private": true,
   "scripts": {
     "build": "turbo build",
