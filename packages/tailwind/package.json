@@ -1,0 +1,20 @@
+{
+  "name": "tailwind",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./web": "./web.ts"
+  },
+  "scripts": {
+    "build": "echo 'Add build script here'",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'"
+  },
+  "dependencies": {
+    "@repo/eslint-config": "*"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.6",
+    "@repo/typescript-config": "*"
+  }
+}

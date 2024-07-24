@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf node_modules .next"
   },
   "dependencies": {
     "react": "^18",
@@ -14,11 +15,11 @@
     "next": "14.2.5"
   },
   "devDependencies": {
+    "@repo/tailwind": "*",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "postcss": "^8"
   }
 }

@@ -1,11 +1,15 @@
 import type { Config } from "tailwindcss";
+import baseConfig from '@repo/tailwind/web'
 
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    ...baseConfig.content,
+    "../../packages/ui/**/*.{ts,tsx}"
   ],
+  presets: [baseConfig],
   theme: {
     extend: {
       backgroundImage: {
