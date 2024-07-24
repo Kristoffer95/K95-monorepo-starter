@@ -11,10 +11,10 @@
     "lint": "echo 'Add lint script here'"
   },
   "dependencies": {
-    "@repo/eslint-config": "*"
+    "@k95/eslint-config": "*"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.6",
-    "@repo/typescript-config": "*"
+    "@k95/typescript-config": "*"
   }
 }

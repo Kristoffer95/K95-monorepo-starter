@@ -5,10 +5,7 @@ export default function Home() {
     <main className="container border">
       sfsfsdfs
 
-      <h1>Test</h1>
-
-  sfsfsfsf
-
+      sfs
     </main>
   );
 }
