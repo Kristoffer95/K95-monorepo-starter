@@ -1,0 +1,14 @@
+{
+  "extends": "@k95/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "utils": ["./utils"],
+      "components/*": ["./components/*"]
+    },
+    "jsx": "react-jsx"  // Set JSX option to handle JSX syntax
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
+}

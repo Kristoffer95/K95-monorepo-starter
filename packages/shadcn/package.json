@@ -1,0 +1,32 @@
+{
+  "name": "@k95/shadcn",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "components",
+    "styles.css"
+  ],
+  "exports": {
+    "./config": {
+      "types": "./dist/tailwind.config.d.ts",
+      "default": "./dist/tailwind.config.js"
+    },
+    "./button": "./components/ui/button.tsx"
+  },
+  "scripts": {
+    "dev": "tsc"
+  },
+  "dependencies": {
+    "@k95/tailwind-config": "*",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.414.0",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@k95/eslint-config": "*",
+    "@k95/typescript-config": "*"
+  }
+}
