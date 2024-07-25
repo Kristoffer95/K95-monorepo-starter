@@ -1,0 +1,27 @@
+{
+  "name": "@k95/env",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "client.ts",
+    "server.ts"
+  ],
+  "exports": {
+    "./client": "./client.ts",
+    "./server": "./server.ts"
+  },
+  "scripts": {
+    "build": "echo 'Add build script here'",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'"
+  },
+  "devDependencies": {
+    "@k95/eslint-config": "*",
+    "@k95/typescript-config": "*"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "^0.11.0",
+    "zod": "^3.23.8"
+  }
+}

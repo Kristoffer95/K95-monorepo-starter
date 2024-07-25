@@ -1,0 +1,21 @@
+{
+  "name": "@k95/db",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Add dev script here'",
+    "build": "echo 'Add build script here'",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.32.1",
+    "@k95/env": "*"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.23.0",
+    "@k95/eslint-config": "*",
+    "@k95/typescript-config": "*"
+  }
+}
