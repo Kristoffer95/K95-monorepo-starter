@@ -7,17 +7,13 @@
     "styles.css"
   ],
   "exports": {
-    "./config": {
-      "types": "./dist/tailwind.config.d.ts",
-      "default": "./dist/tailwind.config.js"
-    },
-    "./button": "./components/ui/button.tsx"
-  },
-  "scripts": {
-    "dev": "tsc"
+    ".": "./tailwind.config.ts",
+    "./button": "./components/ui/button.tsx",
+    "./dialog": "./components/ui/dialog.tsx"
   },
   "dependencies": {
     "@k95/tailwind-config": "*",
+    "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

@@ -1,11 +1,11 @@
-import type { Config } from "tailwindcss";
-import tailwindConfig from '@k95/shadcn/config'
+import type { Config } from 'tailwindcss';
+import tailwindConfig from '@k95/shadcn';
 
 const config: Config = {
   theme: {
-    ...tailwindConfig.theme
+    ...tailwindConfig.theme,
   },
-  ...tailwindConfig
-}
+  ...tailwindConfig,
+};
 
 export default config;
