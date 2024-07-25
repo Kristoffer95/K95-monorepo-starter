@@ -9,7 +9,8 @@
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component"
+    "generate:component": "turbo gen react-component",
+    "clean": "rm -rf node_modules .turbo"
   },
   "devDependencies": {
     "@k95/eslint-config": "*",

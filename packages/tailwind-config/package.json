@@ -6,7 +6,8 @@
     "./web": "./web.ts"
   },
   "scripts": {
-    "dev": "tsc"
+    "dev": "tsc",
+    "clean": "rm -rf node_modules .turbo"
   },
   "dependencies": {
     "@k95/eslint-config": "*"
