@@ -9,10 +9,12 @@
   "exports": {
     ".": "./tailwind.config.ts",
     "./button": "./components/ui/button.tsx",
-    "./dialog": "./components/ui/dialog.tsx"
+    "./dialog": "./components/ui/dialog.tsx",
+    "./alert-dialog": "./components/ui/alert-dialog.tsx"
   },
   "dependencies": {
     "@k95/tailwind-config": "*",
+    "@radix-ui/react-alert-dialog": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
