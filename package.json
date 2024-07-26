@@ -23,7 +23,9 @@
     "tooling/*"
   ],
   "dependencies": {
+    "@trpc/react-query": "^11.0.0-rc.446",
     "dotenv": "^16.4.5",
-    "dotenv-expand": "^11.0.6"
+    "dotenv-expand": "^11.0.6",
+    "superjson": "^2.2.1"
   }
 }

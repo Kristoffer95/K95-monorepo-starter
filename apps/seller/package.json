@@ -2,6 +2,7 @@
   "name": "seller",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -10,17 +11,20 @@
     "clean": "rm -rf node_modules .next .turbo"
   },
   "dependencies": {
+    "@k95/api": "*",
     "@k95/shadcn": "*",
     "@k95/ui": "*",
+    "@trpc/react-query": "*",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "superjson": "*"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8"
+    "postcss": "^8",
+    "typescript": "^5"
   }
 }
