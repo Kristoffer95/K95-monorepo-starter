@@ -3,10 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "echo 'Add dev script here'",
-    "build": "echo 'Add build script here'",
-    "test": "echo 'Add test script here'",
-    "lint": "echo 'Add lint script here'",
+    "clean": "rm -rf node_modules .turbo",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate"
   },

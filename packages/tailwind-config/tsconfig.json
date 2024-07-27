@@ -1,8 +1,5 @@
 {
   "extends": "@k95/typescript-config/base.json",
-  "compilerOptions": {
-    "outDir": "./dist",
-  },
   "include": ["."],
   "exclude": ["node_modules", "dist"]
 }
