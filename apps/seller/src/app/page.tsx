@@ -4,14 +4,16 @@ import TestAlertDialog from './_components/test-alert-dialog';
 import { api } from '@/trpc/server';
 
 export default async function Home() {
-  const post = await api.post.test();
+  // const post = await api.posts.test();
+  const posts = await api.posts.getAll();
 
   return (
     <main className='container border'>
       sfsfsdfs
       <div className='px-2'>
         sfs sfsf
-        <pre>{JSON.stringify(post, null, 2)}</pre>
+        {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
+        <pre>{JSON.stringify(posts, null, 2)}</pre>
         <div>
           <TestAlertDialog />
         </div>

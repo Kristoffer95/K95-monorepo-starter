@@ -9,13 +9,9 @@ export const postRouter = createTRPCRouter({
     return 'TRPC is working! 🚀';
   }),
 
-  // hello: publicProcedure
-  //   .input(z.object({ text: z.string() }))
-  //   .query(({ input }) => {
-  //     return {
-  //       greeting: `Hello ${input.text}`,
-  //     };
-  //   }),
+  getAll: publicProcedure.query(({ ctx }) => {
+    return ctx.db.query.post.findMany();
+  }),
 
   // create: publicProcedure
   //   .input(z.object({ name: z.string().min(1) }))
