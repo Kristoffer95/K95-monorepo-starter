@@ -1,0 +1,19 @@
+{
+  "name": "@k95/auth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf node_modules .turbo"
+  },
+  "dependencies": {
+    "@k95/db": "*",
+    "@k95/env": "*",
+    "@auth/drizzle-adapter": "*"
+  },
+  "devDependencies": {
+    "@k95/eslint-config": "*",
+    "@k95/tailwind-config": "*",
+    "@k95/typescript-config": "*"
+  }
+}

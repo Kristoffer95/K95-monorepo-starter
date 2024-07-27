@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "@k95/api": "*",
+    "@k95/auth": "*",
     "@k95/shadcn": "*",
     "@k95/ui": "*",
+    "@k95/env": "*",
     "@trpc/react-query": "*",
     "next": "14.2.5",
     "react": "^18",

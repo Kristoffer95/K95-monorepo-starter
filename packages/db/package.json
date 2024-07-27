@@ -9,12 +9,12 @@
   },
   "dependencies": {
     "@k95/env": "*",
-    "drizzle-orm": "^0.30.10",
+    "drizzle-orm": "*",
     "postgres": "^3.4.4"
   },
   "devDependencies": {
     "@k95/eslint-config": "*",
     "@k95/typescript-config": "*",
-    "drizzle-kit": "^0.21.4"
+    "drizzle-kit": "*"
   }
 }

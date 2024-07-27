@@ -8,11 +8,6 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "devDependencies": {
-    "prettier": "^3.2.5",
-    "turbo": "^2.0.9",
-    "typescript": "^5.4.5"
-  },
   "engines": {
     "node": ">=18"
   },
@@ -23,9 +18,18 @@
     "tooling/*"
   ],
   "dependencies": {
+    "@auth/drizzle-adapter": "^1.4.1",
+    "drizzle-orm": "^0.30.10",
     "@trpc/react-query": "^11.0.0-rc.446",
     "dotenv": "^16.4.5",
     "dotenv-expand": "^11.0.6",
+    "next-auth": "^4.24.7",
     "superjson": "^2.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.9",
+    "typescript": "^5.4.5",
+    "drizzle-kit": "^0.21.4"
   }
 }
