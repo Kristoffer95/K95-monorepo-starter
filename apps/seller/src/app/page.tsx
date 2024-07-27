@@ -4,6 +4,7 @@ import TestAlertDialog from './_components/test-alert-dialog';
 import { api } from '@/trpc/server';
 import { getServerAuthSession } from '@k95/auth';
 import DiscordLoginButton from './_components/shared/discord-login-button';
+import Link from 'next/link';
 
 export default async function Home() {
   // const post = await api.posts.test();
@@ -12,13 +13,20 @@ export default async function Home() {
 
   return (
     <main className='container border'>
-      <pre>{JSON.stringify(session, null, 2)}</pre>
+      <div className='border p-5'>
+        <h2>AUTH</h2>
+        <pre>{JSON.stringify(session?.user, null, 2)}</pre>
+        {session ? (
+          <Button variant={'outline'} className='bg-black/0'>
+            <Link href='/api/auth/signout'>Logout </Link>
+          </Button>
+        ) : (
+          <DiscordLoginButton />
+        )}
+      </div>
 
-      <DiscordLoginButton />
-
-      <div className='px-2'>
-        sfs sfsf
-        {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
+      <div className='p-5 border'>
+        <h2>TRPC</h2>
         <pre>{JSON.stringify(posts, null, 2)}</pre>
         <div>
           <TestAlertDialog />
