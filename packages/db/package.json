@@ -5,16 +5,19 @@
   "scripts": {
     "clean": "rm -rf node_modules .turbo",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate"
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "cross-env DB_SEEDING=true tsx ./seed.ts"
   },
   "dependencies": {
     "@k95/env": "*",
     "drizzle-orm": "*",
-    "postgres": "^3.4.4"
+    "postgres": "^3.4.4",
+    "tsx": "*"
   },
   "devDependencies": {
     "@k95/eslint-config": "*",
     "@k95/typescript-config": "*",
+    "cross-env": "^7.0.3",
     "drizzle-kit": "*"
   }
 }
